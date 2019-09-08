@@ -1,0 +1,81 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+::selection
+	background-color: $accent
+	color: #fff
+
+.container 
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $mainText
+	background-color: $mainBlack
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+
+.head-image 
+	height: 237px
+	background-size: cover
+
+.main-form 
+	border-radius: 20px 20px 0 0
+	overflow: hidden
+	transform: translateY(-20px)
+
+
+	&__head 
+		background-color: $mainGrey
+		text-align: center
+		font-size: 25px
+		padding: 10px 12px
+		margin-bottom: 65px
+
+	&__field 
+		padding: 0 17px
+		margin-bottom: 18px
+
+		input
+			color: #fff
+			font-weight: 300
+			padding: 13px 24px 
+			width: 100%
+			background-color: $mainGrey
+			border: none
+			border-radius: 12px 
+			position: relative
+			border-right: 23px solid #424747
+
+			&::placeholder 
+				font-size: 18px
+				color: #979999
+
+.button
+	border: none
+	background-color: transparent
+	width: 100%
+	border-radius: 12px
+	display: inline-block
+	font-size: 18px
+	line-height: 51px
+	background-color: $accent	
+
+
+
+@import "media" // Always at the end
+

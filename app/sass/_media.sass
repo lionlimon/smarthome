@@ -1,0 +1,101 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+
+// ≥992px
++media-breakpoint-down(md)
+	.main-head 
+		
+		&__top 
+			height: 66px
+
+		&__nav 
+			ul li a 
+				font-size: 15px
+
+			ul li 
+				padding: 0 15px
+
+		.phone a, .callback a, .profile a, li a
+			line-height: 66px	
+
+		.profile, .callback 
+			display: inline-block
+			float: right
+			text-align: center
+			border-left: 1px solid #296BB1
+
+			svg 
+				max-width: 25px
+				width: 100%
+			a 
+				padding: 0 22px
+		
+
+		.callback
+			svg 
+				margin: 0 auto
+
+			span 
+				display: none
+
+		.phone 
+			a
+				border: none
+				padding-left: 0
+
+				&:before 
+					display: none
+
+
+// ≥768px
++media-breakpoint-down(sm)
+	
+	.main-head 
+		&__top 
+			height: 50px
+
+			.phone 
+				text-align: left
+				margin-left: 12px
+
+				a 
+					font-size: 18px
+
+			.phone a, .callback a, .profile a, li a
+				line-height: 50px	
+		
+
+		.callback, .profile 
+			display: inline-block
+			
+			
+			svg 
+				width: 20px
+
+			a 
+				padding: 0 10px	
+
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
