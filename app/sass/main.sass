@@ -65,6 +65,9 @@ body
 			&::placeholder 
 				font-size: 18px
 				color: #979999
+	
+	.button 
+		margin-top: 16px
 
 .button
 	border: none
@@ -78,7 +81,11 @@ body
 	cursor: pointer
 	color: #fff
 	background-color: $accent	
-	margin-top: 16px
+
+	&:hover 
+		color: #fff
+		text-decoration: none
+	
 
 .main-head 
 	background-color: $mainGrey
@@ -132,6 +139,10 @@ body
 	font-size: 30px
 	box-shadow: 0px 0px 10px #000
 	transition: all .25s
+	color: #fff
+
+	&:hover, &:focus
+		color: #fff
 
 .menu-close-button 
 	position: absolute
@@ -171,6 +182,7 @@ body
 	left: 0
 	border-radius: 20px 20px 0 0
 	transform: translateY(100%)
+	overflow-y: scroll
 
 	&.menu 
 		padding: 60px 20px
