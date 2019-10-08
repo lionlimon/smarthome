@@ -182,8 +182,9 @@ body
 	left: 0
 	border-radius: 20px 20px 0 0
 	transform: translateY(100%)
+	color: #dedede
 	overflow-y: scroll
-
+	
 	&.menu 
 		padding: 60px 20px
 
@@ -201,6 +202,8 @@ body
 
 		a 
 			color: #DEDEDE
+			white-space: nowrap 
+			overflow-x: hidden
 			background-color: #424747
 			line-height: 57px
 			border-radius: 12px
@@ -219,7 +222,89 @@ body
 				margin-right: 20px
 				transform: translateY(-3px)
 
+	&__head
+		font-weight: 400
+		font-size: 25px
+		width: 100%
+		text-align: center
+		margin-top: 11px
+		padding-bottom: 10px
+		border-bottom: 1px solid $mainBlack	
 
+	&.favorite
+		.container
+			padding: 0 15px
+			font-size: 20px
+
+
+.controls 
+	color: #abadac
+
+	&__head
+		font-weight: 400
+		font-size: 18px
+
+	&__item 
+		text-align: center
+		margin-bottom: 20px
+		background-color: #3f4344
+		overflow: hidden
+		border-radius: 8px
+		min-height: 100px
+		min-width: 100px
+	
+	&__img
+		line-height: 1
+		font-size: 40px
+
+	&__name, &__place, &__info 
+		white-space: nowrap
+		display: block
+		font-size: 12px
+		font-weight: 300
+		line-height: 1
+		margin-top: 5px
+	
+	&__place 
+		font-weight: bold
+	
+	&__info 
+		font-size: 22px
+		margin-top: 18px
+		margin-bottom: 10px
+	
+	label
+		min-height: 100px
+		min-width: 100px
+		padding: 10px
+		width: 100%
+		height: 100%
+		background-color: #3f4344
+		transition: all .2s ease-in-out
+		margin: 0
+		position: relative
+
+		&:before 
+			position: absolute
+			font-weight: 300
+			transition: all .25s
+			left: 5px
+			top: 0
+			content: 'off'
+			font-size: 10px
+
+
+	input[type="checkbox"] 
+		display: none
+
+	input[type="checkbox"]:checked ~ label 
+		background-color: $accent
+		color: #fff
+
+		&:before 
+			content: 'on'
+			color: #fff
+	
 
 @import "media" // Always at the end
 
