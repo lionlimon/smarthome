@@ -28,46 +28,69 @@
 <body>
 		
 	<header class="main-head">
-		Комнаты
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					Комнаты
+				</div>
+			</div>
+		</div>
 	</header>
 
-	<div class="rooms container">
-		<a href="room.html" class="room">
-			<div class="room-img" style="background-image: url('img/room_Зал.jpg');"></div>
+	<div class="rooms container-fluid">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="room.html" class="room">
+					<div class="room-img" style="background-image: url('img/room_Зал.jpg');"></div>
+				
+					<h3 class="room-head">
+						3ал
+					</h3>
+				</a>
+			</div>
 
-			<h3 class="room-head">
-				3ал
-			</h3>
-		</a>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="room.html" class="room">
+					<div class="room-img" style="background-image: url('img/room_Коридор.jpg');"></div>
+				
+					<h3 class="room-head">
+						Коридор
+					</h3>
+				</a>
+			</div>
 
-		<a href="room.html" class="room">
-			<div class="room-img" style="background-image: url('img/room_Коридор.jpg');"></div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="room.html" class="room">
+					<div class="room-img" style="background-image: url('img/room_Зал.jpg');"></div>
+				
+					<h3 class="room-head">
+						Кухня
+					</h3>
+				</a>
+			</div>
 
-			<h3 class="room-head">
-				Коридор
-			</h3>
-		</a>
-
-		<a href="room.html" class="room">
-			<div class="room-img" style="background-image: url('img/room_Зал.jpg');"></div>
-
-			<h3 class="room-head">
-				Кухня
-			</h3>
-		</a>
-
-		<a href="room.html" class="room">
-			<div class="room-img" style="background-image: url('img/room_Спальня.png');"></div>
-
-			<h3 class="room-head">
-				Спальня
-			</h3>
-		</a>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="room.html" class="room">
+					<div class="room-img" style="background-image: url('img/room_Спальня.png');"></div>
+				
+					<h3 class="room-head">
+						Спальня
+					</h3>
+				</a>
+			</div>
+		</div>
+		
 	</div>
 	
-	<a href="#menu" class="pop-up-button menu-button">
-		<i class="fas fa-bars"></i>
-	</a>
+	<div class="menu-buttons">
+		<a href="#menu" class="pop-up-button menu-button">
+			<i class="fas fa-bars"></i>
+		</a>
+		
+		<a href="#favorite" class="pop-up-button menu-button favorite">
+			<i class="fas fa-star"></i>
+		</a>
+	</div>
 
 	<div id="menu" class="fullscreen menu">
 		<div class="menu pop-up">
@@ -78,7 +101,7 @@
 					<li><a href="#"><i class="fas fa-list"></i>Все устройства и датчики</a></li>
 					<li><a href="#"><i class="fas fa-toggle-on"></i>Макросы</a></li>
 					<li><a href="#"><i class="fas fa-home"></i>Мой дом</a></li>
-					<li><a class="pop-up-button" href="#favorite"><i class="fas fa-star"></i>Избранное</a></li>
+					<li class="d-sm-none"><a class="pop-up-button" href="#favorite"><i class="fas fa-star"></i>Избранное</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -92,20 +115,21 @@
 				Избранное
 			</h3>
 			
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12">
 						<h4 class="controls__head">Устройства</h4>
 					</div>
 
-					<div class="col">
+					<div class="col-12">
 						<div class="controls">
 							<div class="row">
 
-								<div class="col-4">
+								
+								<div class="col-12">
 									<div class="controls__item">
 										<input id="control_1" name="control_1" type="checkbox">
-
+									
 										<label for="control_1">
 											<div class="controls__img">
 												<i class="fas fa-lightbulb"></i>
@@ -115,14 +139,14 @@
 																	
 											<span class="controls__place">Кухня</span>
 										</label>
-
+									
 									</div>
-								</div>
-
-								<div class="col-4">
+									
+									
+									
 									<div class="controls__item">
 										<input id="control_2" name="control_2" type="checkbox">
-
+									
 										<label for="control_2">
 											<div class="controls__img">
 												<i class="fas fa-volume-up"></i>
@@ -132,14 +156,14 @@
 																	
 											<span class="controls__place">Зал</span>
 										</label>
-
+									
 									</div>
-								</div>
-
-								<div class="col-4">
+									
+									
+									
 									<div class="controls__item">
 										<input id="control_3" name="control_3" type="checkbox">
-
+									
 										<label for="control_3">
 											<div class="controls__img">
 												<i class="fas fa-mug-hot"></i>
@@ -149,9 +173,10 @@
 																	
 											<span class="controls__place">Кухня</span>
 										</label>
-
+									
 									</div>
 								</div>
+								
 
 							</div>
 							
@@ -166,9 +191,10 @@
 						<div class="controls">
 							<div class="row">
 
-								<div class="col-4">
+								
+								<div class="col-12">
 									<div class="controls__item">										
-
+									
 										<div class="controls__info">
 											18°C
 										</div>
@@ -176,13 +202,13 @@
 										<span class="controls__name">Главный свет</span>
 																
 										<span class="controls__place">Кухня</span>
-
+									
 									</div>
-								</div>
-
-								<div class="col-4">
+									
+									
+									
 									<div class="controls__item">										
-
+									
 										<div class="controls__info">
 											52%
 										</div>
@@ -190,9 +216,10 @@
 										<span class="controls__name">Влажность</span>
 																
 										<span class="controls__place">Зал</span>
-
+									
 									</div>
 								</div>
+								
 
 							</div>
 							
